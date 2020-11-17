@@ -1,52 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // import AwesomeSlider from 'react-awesome-slider';
 // import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
  
-// const slider = (
-//   <AwesomeSlider animation="cubeAnimation">
-//     <div data-src="/path/to/image-0.png" />
-//     <div data-src="/path/to/image-1.png" />
-//     <div data-src="/path/to/image-2.jpg" />
-//   </AwesomeSlider>
-// );
+// function App1() {
+//   return (
+//     <AwesomeSlider animation="cubeAnimation">
+//       <div data-src="/path/to/image-0.png" />
+//       <div data-src="/path/to/image-1.png" />
+//       <div data-src="/path/to/image-2.jpg" />
+//     </AwesomeSlider>
+//   )
+// }
+
+// export default App1;
 
 
-// import AwesomeSlider from 'react-awesome-slider';
-// import 'react-awesome-slider/dist/styles.css';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
  
-// const slider = (
-//   <AwesomeSlider>
-//     <div>1</div>
-//     <div>2</div>
-//     <div>3</div>
-//     <div>4</div>
-//   </AwesomeSlider>
-// );
+const App2 = ()=> {
+  return (
+    <AwesomeSlider>
+      <div>1</div>
+      <div style={{ backgroundColor: 'yellow' }}>2</div>
+      <div>3</div>
+      <div>4</div>
+    </AwesomeSlider>
+  )
+}
+export default App2;
 
 
 // import Flickity from 'react-flickity-component'
@@ -55,7 +64,7 @@ export default App;
 //     initialIndex: 2
 // }
  
-// function Carousel() {
+// function App3() {
 //   return (
 //     <Flickity
 //       className={'carousel'} // default ''
@@ -71,6 +80,7 @@ export default App;
 //     </Flickity>
 //   )
 // }
+// export default App3;
 
 
 // import React, { Component } from 'react';
@@ -78,7 +88,7 @@ export default App;
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from 'react-responsive-carousel';
  
-// class DemoCarousel extends Component {
+// class App4 extends Component {
 //     render() {
 //         return (
 //             <Carousel>
@@ -98,6 +108,7 @@ export default App;
 //         );
 //     }
 // });
+// export default App4;
 
 
 // import React from "react";
@@ -134,3 +145,4 @@ export default App;
 //     </Slider>
 //   );
 // }
+// export default App5;
