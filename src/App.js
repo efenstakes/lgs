@@ -1,114 +1,50 @@
-// import logo from './logo.svg';
 import './App.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-// import AwesomeSlider from 'react-awesome-slider';
-// import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
- 
-// function App1() {
-//   return (
-//     <AwesomeSlider animation="cubeAnimation">
-//       <div data-src="/path/to/image-0.png" />
-//       <div data-src="/path/to/image-1.png" />
-//       <div data-src="/path/to/image-2.jpg" />
-//     </AwesomeSlider>
-//   )
-// }
-
-// export default App1;
+// pages
+import HomePage from './pages/home/home.page'
+import ServicesPage from './pages/services/services.page'
+import NewsPage from './pages/news/news.page'
+import WorkWithUsPage from './pages/work_with_us/work_with_us.page'
+import PrivacyPage from './pages/privacy/privacy.page'
 
 
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
- 
-const App2 = ()=> {
+function App() {
   return (
-    <AwesomeSlider>
-      <div>1</div>
-      <div style={{ backgroundColor: 'yellow' }}>2</div>
-      <div>3</div>
-      <div>4</div>
-    </AwesomeSlider>
-  )
+    <Router>
+      <Switch>
+
+        // home
+        <Route exact path="/" component={HomePage} />
+
+        // services
+        <Route exact path="/services" 
+               component={ServicesPage} />
+
+        // news
+        <Route exact path="/news" component={NewsPage} />
+
+        // work with us
+        <Route exact path="/work-with-us" 
+               component={WorkWithUsPage} />
+
+        // privacy
+        <Route exact path="/privacy" 
+               component={PrivacyPage} />
+
+      </Switch>
+    </Router>
+  );
 }
-export default App2;
+
+export default App;
 
 
-// import Flickity from 'react-flickity-component'
- 
-// const flickityOptions = {
-//     initialIndex: 2
-// }
- 
-// function App3() {
-//   return (
-//     <Flickity
-//       className={'carousel'} // default ''
-//       elementType={'div'} // default 'div'
-//       options={flickityOptions} // takes flickity options {}
-//       disableImagesLoaded={false} // default false
-//       reloadOnUpdate // default false
-//       static // default false
-//     >
-//       <img src="/images/placeholder.png"/>
-//       <img src="/images/placeholder.png"/>
-//       <img src="/images/placeholder.png"/>
-//     </Flickity>
-//   )
-// }
-// export default App3;
-
-
-// import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from 'react-responsive-carousel';
- 
-// class App4 extends Component {
-//     render() {
-//         return (
-//             <Carousel>
-//                 <div>
-//                     <img src="assets/1.jpeg" />
-//                     <p className="legend">Legend 1</p>
-//                 </div>
-//                 <div>
-//                     <img src="assets/2.jpeg" />
-//                     <p className="legend">Legend 2</p>
-//                 </div>
-//                 <div>
-//                     <img src="assets/3.jpeg" />
-//                     <p className="legend">Legend 3</p>
-//                 </div>
-//             </Carousel>
-//         );
-//     }
-// });
-// export default App4;
 
 
 // import React from "react";
