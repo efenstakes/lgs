@@ -4,10 +4,18 @@ import './index.scss';
 import App from './App';
 
 
+// material ui setup
+import theme from './utils/theme'
+import { ThemeProvider } from '@material-ui/core'
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
