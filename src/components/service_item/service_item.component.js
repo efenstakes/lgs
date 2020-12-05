@@ -8,6 +8,7 @@ import {
 
 import SpaceComponent from '../spacer/spacer.component'
 import './service_item.component.scss'
+import SpacerComponent from '../spacer/spacer.component'
 
 
 
@@ -72,6 +73,7 @@ const Content = ({ title, text, cta, extras })=> {
           <h2 className="service_item__content__title"> {title} </h2>
           {/* <p className="service_item__content__subtitle"> {text} </p> */}
           <div className="service_item__content__text_container"> {text} </div>
+          <SpacerComponent space={10} />
           <div className="service_item__content__extras"> {extras} </div>
           <SpaceComponent space={20} />
           <div className="service_item__content__ctas"> {cta} </div>

@@ -2,7 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 
-import img1 from '../../assets/images/drone.jpg'
+
+import img2 from '../../assets/images/cctv camera.jpg'
+import img3 from '../../assets/images/Dog handler.jpg'
+import img4 from '../../assets/images/Event-security.jpg'
+import img5 from '../../assets/images/VIP Guards.jpg'
+
 
 // import './service_items.component.scss'
 import ButtonComponent from '../button/button.component'
@@ -27,7 +32,7 @@ const VServiceItemsComponent = () => {
         <Grid item xs={12} sm={6} md={6} 
           style={{ backgroundColor: 'inherit' }}>
         <VserviceItemComponent
-            imageSrc={img1}
+            imageSrc={img2}
             title="Work With Us"
             text="As a professional Security provider with a head office centrally located in Milton Keynes"
             cta={
@@ -42,7 +47,7 @@ const VServiceItemsComponent = () => {
         <Grid item xs={12} sm={6} md={6} 
           style={{ backgroundColor: 'inherit' }}>
         <VserviceItemComponent
-            imageSrc={img1}
+            imageSrc={img3}
             title="Contact Us"
             text="As a professional Security provider with a head office centrally located in Milton Keynes"
             cta={
