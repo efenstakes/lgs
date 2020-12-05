@@ -2,8 +2,8 @@ import React from 'react'
 
 import './news.page.scss'
 
-import img1 from '../../assets/images/drone.jpg'
-
+import img4 from '../../assets/images/Event-security.jpg'
+import img5 from '../../assets/images/VIP Guards.jpg'
 
 
 import SpacerComponent from '../../components/spacer/spacer.component'
@@ -23,13 +23,27 @@ const NewsPage = () => {
       <SpacerComponent space={40} />
 
       <NewsItemComponent
-        imageSrc={img1}
+        imageSrc={img4}
         title="Security Operative prevents a distribution center fire"
         date="31 July 2020"
         text={
-            <>
-              <p> text </p>
-            </>
+          <>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+          </>
         }
         imgThenText={true}
       />
@@ -38,19 +52,33 @@ const NewsPage = () => {
       <SpacerComponent space={40} />
 
       <NewsItemComponent
-        imageSrc={img1}
+        imageSrc={img5}
         title="Security Operative prevents a distribution center fire"
         date="2 July 2020"
         text={
-            <>
-              <p> text </p>
-            </>
+          <>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+            <p className="news_item__text">
+              As a professional Security provider with a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. With a head office centrally located in Milton Keynes, we are able to provide numerous cost-effective services. 
+            </p>
+          </>
         }
       />
 
     
       {/* space */}
-      <SpacerComponent space={20} />
+      <SpacerComponent space={40} />
 
       {/* footer */}
       <FooterComponent />
